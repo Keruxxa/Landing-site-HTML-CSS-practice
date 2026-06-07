@@ -13,3 +13,86 @@ body {
   margin: 0 auto;
   height: 100%;
 }
+
+/* header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 1em 0;
+}
+
+.header__logo-side {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+}
+
+.header__company-name {
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.header__contact-side {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1em;
+}
+
+.header__nav {
+  justify-self: center;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 600;
+  transition: color var(--transition-speed);
+  white-space: nowrap;
+}
+
+.header__link:hover {
+  color: var(--color-primary);
+}
+
+.header__link--active {
+  color: var(--color-primary);
+}
+
+.header__search {
+  cursor: pointer;
+}
+/* header */
+
+/* button */
+button {
+  padding: 1em 1.25em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  transition: all var(--transition-speed) ease;
+  color: #fff;
+}
+
+button:hover {
+  filter: brightness(0.85);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  filter: brightness(1.25);
+}
+/* button */
