@@ -3,4 +3,7 @@
   --color-secondary: #1d232c;
 
   --transition-speed: 0.3s;
+
+  --font-size: 16;
+  --rem-coef: calc(1 / var(--font-size) * 1rem);
 }

@@ -11,15 +11,15 @@
       <header class="header">
         <div class="header__logo-side">
           <a class="header__logo" href="">
-            <img src="assets/logo.svg" alt="logo" width="24" height="24" />
+            <img src="assets/logo.svg" alt="Логотип" width="24" height="24" />
           </a>
           <span class="header__company-name">NORDIC</span>
         </div>
         <div class="header__nav-side">
-          <nav>
-            <ul class="header__nav">
+          <nav class="header__nav" id="nav">
+            <ul class="header__link-wrapper">
               <li>
-                <a class="header__link header__link--active" href="">Главная</a>
+                <a class="header__link active" href="">Главная</a>
               </li>
               <li>
                 <a class="header__link" href="">О нас</a>
@@ -44,10 +44,20 @@
             class="header__search"
             src="/assets/search.svg"
             alt="search"
-            width="16"
-            height="16"
+            width="20"
+            height="20"
           />
           <button class="btn-secondary">Связаться с нами</button>
+          <button
+            class="header__burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
     </div>
@@ -57,5 +67,7 @@
     <div class="container">
       <footer></footer>
     </div>
+
+    <script src="./js/burger.js" defer></script>
   </body>
 </html>
